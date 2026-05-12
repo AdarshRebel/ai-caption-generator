@@ -43,8 +43,10 @@ Add emojis and hashtags.
       result: response.choices[0].message.content,
     });
   } catch (error) {
+    console.error("Caption generation error:", error);
     return Response.json({
-      error: error.message,
-    });
+      error: error.message || "Failed to generate caption",
+      details: error.toString(),
+    }, { status: 500 });
   }
 }

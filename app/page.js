@@ -35,9 +35,12 @@ export default function Home() {
         }),
       });
 
-      if (!res.ok) throw new Error("Failed to generate caption");
-
       const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || "Failed to generate caption");
+      }
+
       setResult(data.result || "");
     } catch (err) {
       setError(err.message || "An error occurred");
