@@ -76,6 +76,21 @@ export default function Home() {
           </p>
         </div>
 
+        {/* Top Banner Ad */}
+        <div className="mb-8">
+          <ins
+            className="adsbygoogle"
+            style={{ display: "block" }}
+            data-ad-client="ca-pub-2081194634698590"
+            data-ad-slot="9781859548"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          ></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+
         {/* Card */}
         <div className="bg-white rounded-2xl shadow-2xl p-8 space-y-6">
           {/* Topic Input */}
