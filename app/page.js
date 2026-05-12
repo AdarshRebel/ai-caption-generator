@@ -86,7 +86,7 @@ export default function Home() {
               value={topic}
               onChange={(e) => setTopic(e.target.value)}
               onKeyPress={handleKeyPress}
-              className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition"
+              className="w-full px-4 py-3 border-2 border-slate-200 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition text-red-600 font-semibold placeholder-red-300 bg-white"
             />
           </div>
 
@@ -99,7 +99,7 @@ export default function Home() {
               <select
                 value={mood}
                 onChange={(e) => setMood(e.target.value)}
-                className="w-full px-4 py-2 border border-slate-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none"
+                className="w-full px-4 py-2 border-2 border-slate-200 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none text-red-600 font-semibold"
               >
                 <option>Funny</option>
                 <option>Inspirational</option>
@@ -114,7 +114,7 @@ export default function Home() {
               <select
                 value={platform}
                 onChange={(e) => setPlatform(e.target.value)}
-                className="w-full px-4 py-2 border border-slate-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none"
+                className="w-full px-4 py-2 border-2 border-slate-200 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none text-red-600 font-semibold"
               >
                 <option>Instagram</option>
                 <option>Twitter</option>
@@ -166,7 +166,7 @@ export default function Home() {
                   {copied ? "Copied!" : "Copy"}
                 </button>
               </div>
-              <p className="text-slate-700 whitespace-pre-wrap leading-relaxed">
+              <p className="text-red-600 font-semibold whitespace-pre-wrap leading-relaxed">
                 {result}
               </p>
             </div>
