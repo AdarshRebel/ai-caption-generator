@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -15,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "AI Caption Generator - Free Social Media Captions",
-  description: "Generate engaging AI-powered captions for Instagram, Twitter, LinkedIn, and TikTok. Free social media caption generator using Groq API.",
+  description:
+    "Generate engaging AI-powered captions for Instagram, Twitter, LinkedIn, and TikTok. Free social media caption generator using Groq API.",
 };
 
 export default function RootLayout({
