@@ -66,11 +66,6 @@ export default function Home() {
           <div className="flex items-center justify-center gap-3 mb-4">
             <Sparkles className="w-8 h-8 text-purple-400" />
             <h1 className="text-5xl font-bold text-white">
-              <script
-                async
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2081194634698590"
-                crossorigin="anonymous"
-              ></script>
               Caption Generator
             </h1>
             <Sparkles className="w-8 h-8 text-purple-400" />
@@ -78,6 +73,22 @@ export default function Home() {
           <p className="text-slate-300 text-lg">
             Create engaging captions powered by AI
           </p>
+        </div>
+
+        {/* Ad Unit */}
+        <div className="mb-8 flex justify-center">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2081194634698590"
+               crossorigin="anonymous"></script>
+          {/* caption */}
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-2081194634698590"
+               data-ad-slot="9781859548"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
         </div>
 
         {/* Card */}
