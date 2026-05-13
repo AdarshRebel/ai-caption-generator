@@ -82,8 +82,8 @@ export default function Home() {
           ></script>
           {/* caption */}
           <ins
-            class="adsbygoogle"
-            style="display:block"
+            className="adsbygoogle"
+            style={{display: 'block'}}
             data-ad-client="ca-pub-2081194634698590"
             data-ad-slot="9781859548"
             data-ad-format="auto"
