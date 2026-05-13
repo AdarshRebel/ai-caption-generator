@@ -1,5 +1,6 @@
 "use client";
 
+import Script from "next/script";
 import { AlertCircle, Copy, Sparkles } from "lucide-react";
 import { useState } from "react";
 
@@ -75,21 +76,18 @@ export default function Home() {
 
         {/* Ad Unit */}
         <div className="mb-8 flex justify-center">
-          <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2081194634698590"
-            crossorigin="anonymous"
-          ></script>
           {/* caption */}
           <ins
             className="adsbygoogle"
-            style={{display: 'block'}}
+            style={{ display: "block" }}
             data-ad-client="ca-pub-2081194634698590"
             data-ad-slot="9781859548"
             data-ad-format="auto"
             data-full-width-responsive="true"
           ></ins>
-          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          <Script id="adsense-init" strategy="afterInteractive">
+            {`(adsbygoogle = window.adsbygoogle || []).push({});`}
+          </Script>
         </div>
 
         {/* Card */}
