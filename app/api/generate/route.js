@@ -1,19 +1,12 @@
 import OpenAI from "openai";
 
+const client = new OpenAI({
+  apiKey: process.env.GROQ_API_KEY,
+  baseURL: "https://api.groq.com/openai/v1",
+});
+
 export async function POST(req) {
   try {
-    // Check for API key
-    if (!process.env.GROQ_API_KEY) {
-      return Response.json({
-        error: "GROQ_API_KEY is not set. Please add it to your environment variables.",
-      }, { status: 500 });
-    }
-
-    const client = new OpenAI({
-      apiKey: process.env.GROQ_API_KEY,
-      baseURL: "https://api.groq.com/openai/v1",
-    });
-
     const body = await req.json();
 
     const prompt = `
@@ -43,10 +36,8 @@ Add emojis and hashtags.
       result: response.choices[0].message.content,
     });
   } catch (error) {
-    console.error("Caption generation error:", error);
     return Response.json({
-      error: error.message || "Failed to generate caption",
-      details: error.toString(),
-    }, { status: 500 });
+      error: error.message,
+    });
   }
 }
