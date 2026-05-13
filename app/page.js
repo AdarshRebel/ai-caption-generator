@@ -1,7 +1,7 @@
 "use client";
 
-import Script from "next/script";
 import { AlertCircle, Copy, Sparkles } from "lucide-react";
+import Script from "next/script";
 import { useState } from "react";
 
 export default function Home() {
